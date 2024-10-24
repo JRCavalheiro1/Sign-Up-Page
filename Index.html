@@ -1,43 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link href="style.css" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign Up</title>
+        <link href="style.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet"/>
+  </head>
+  <body>
     <div class="image-container">
-        <img class="odin-logo" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"/>    
+            <a href="https://www.theodinproject.com/" target="_blank">
+              <img
+                class="odin-logo"
+                src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"/>
+            </a>
+            <span>Image by <a href="https://wallhaven.cc/user/Lodbrok" target="_blank">Lodbrok</a> on <a href="https://wallhaven.cc" target="_blank">Walhaven</a></span>
     </div>
 
     <div class="content-form">
-        <h1 class="title">Sign Up Now!</h1>
-        <form class="form" method="post" action="#">
-            <div class="name-field inputs">
-                <input type="text" name="userFirstName" placeholder="First Name" required>
-                <input type="text" name="userLastName" placeholder="Last Name" required>
-            </div>
-            <div class="email-number-field inputs">
-                <input type="email" name="userEmail" placeholder="Email" required>
-                <input type="text" name="userNumber" placeholder="Phone Number" pattern="/\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/" minlength="10" required>
-            </div>
-
-            <div class="password-field inputs">
-                <input type="password" placeholder="Password" required>
-                <input type="password" placeholder="Cofirm Password" required>
-            </div>
-            <div class="button-field">
-                <button class="submit-button" type="submit">Create Account</button>
-                <span class="login-link">Already have an account? <a href="#">Log In</a></span>
-            </div>
-        </form>
-        <div class="icon-odin-name">
-            <img src="" alt="">
+      <h1 class="title">Sign Up Now!</h1>
+      <form class="form" method="post" action="#">
+        <div class="name-field inputs">
+          <input
+            type="text"
+            name="userFirstName"
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            name="userLastName"
+            placeholder="Last Name"
+            required
+          />
         </div>
+        <div class="email-number-field inputs">
+          <input type="email" name="userEmail" placeholder="Email" required />
+          <input
+            type="text"
+            name="userNumber"
+            placeholder="Phone Number"
+            pattern="/\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/"
+            minlength="10"
+            required
+          />
+        </div>
+        <div class="password-field inputs">
+          <input type="password" placeholder="Password" required />
+          <input type="password" placeholder="Cofirm Password" required />
+        </div>
+        <div class="button-field">
+          <button class="submit-button" type="submit">Create Account</button>
+          <span class="login-link"> Already have an account? <a href="#">Log In</a></span>
+        </div>
+      </form>
     </div>
-</body>
+  </body>
 </html>

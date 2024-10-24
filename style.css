@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Lexend Deca", sans-serif;
+    font-family:  "Lexend Deca", sans-serif; 
     --input-height: 18px;
     --input-width: 300px;
     --input-padding: 9px 5px;
@@ -11,7 +11,10 @@
     --button-color: #3B5D70;
 }
 
-
+@font-face {
+    font-family: "Norse Bold";
+    src: url("C://Windows/Fonts/NorseBold.ttf");
+}
 
 body {
     display: flex;
@@ -27,15 +30,28 @@ body {
     background-position-x: 15%;
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.odin-logo {
+.odin-logo{
     width: 165px;
     height: 228px;
     margin-top: 60px;
+    cursor: pointer;
 }
-
+.image-container span {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.image-container  a {
+    color: #ffffff;
+}
+.image-container a:hover {
+    color: #588bf8;
+}
 .content-form {
     margin: 144px 0 0 80px;
     display: flex;
@@ -100,17 +116,19 @@ input:not(:placeholder-shown):not(:focus):invalid  {
 .submit-button {
     width: 230px;
     height: 64px;
-    background-color: var(--button-color) ;
+    background-color: var(--button-color);
     border-radius: 10px;
     cursor: pointer;
     border: none;
+
     color: #ffffff;
     font-size: 17px;
     font-weight: 700;
 }
 
 .submit-button:hover {
-    filter: brightness(0.9)
+    filter: brightness(0.9);
+    transition: 0.3s;
 }
 
 .button-field span {
@@ -127,4 +145,3 @@ input:not(:placeholder-shown):not(:focus):invalid  {
     filter: brightness(0.9);
     text-decoration: underline;
 }
-
