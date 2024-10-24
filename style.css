@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Deca", sans-serif;
+    --input-height: 18px;
+    --input-width: 300px;
+    --input-padding: 9px 5px;
+    --input-placeholder-size: 12px;
+    --input-color: #2A443C;
+    --button-color: #3B5D70;
+}
+
+
+
+body {
+    display: flex;
+}
+
+.image-container {
+    width: 600px;
+    height: 950px;
+    background-image: url(https://w.wallhaven.cc/full/o3/wallhaven-o35kvp.jpg);
+    background-repeat: no-repeat;
+    background-size: 350%;
+    background-position-x: 15%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.odin-logo {
+    width: 165px;
+    height: 228px;
+    margin-top: 60px;
+}
+
+.content-form {
+    margin: 144px 0 0 80px;
+    display: flex;
+    flex-direction: column;
+   /*  gap: 78px; */
+}
+.content-form h1 {
+    margin-bottom: 70px;
+    font-size: 50px;
+    font-weight: 400;
+    color: #0D1C22;
+}    
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 78px;
+}
+
+.inputs {
+    display: flex;
+    gap: 60px;
+}
+
+.inputs input {
+    width: 300px;
+    height: 30px;
+    padding: 9px 5px;
+    border-color: transparent;
+    border-bottom: 2px solid ;
+    color: var(--input-color);
+}
+.inputs input::placeholder {
+    color: var(--input-color);
+}
+
+.inputs input:focus {
+    border-color: var(--input-color);
+    border-radius: 5px;
+    outline: none;
+    
+    transition:linear;
+    transition-duration: 0.34s;
+    
+}
+.inputs:invalid {
+    border-color: red;
+}
+
+.button-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.submit-button {
+    width: 230px;
+    height: 64px;
+    background-color: var(--button-color) ;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.submit-button:hover {
+    filter: brightness(0.9)
+}
+
+.button-field span {
+    font-size: 13px;
+    color: #0D1C22;
+    margin-right: 12px;
+    margin-top: 10px;
+}
+.button-field span > a {
+    text-decoration: none;
+    color: var(--input-color);
+}
+.button-field span > a:hover {
+    filter: brightness(0.9);
+    text-decoration: underline;
+}
