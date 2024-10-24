@@ -15,6 +15,7 @@
 
 body {
     display: flex;
+    background-color: #ecf1f1;
 }
 
 .image-container {
@@ -61,9 +62,10 @@ body {
 .inputs input {
     width: 300px;
     height: 30px;
+    background: transparent;
     padding: 9px 5px;
     border-color: transparent;
-    border-bottom: 2px solid ;
+    border-bottom: 2px solid;
     color: var(--input-color);
 }
 .inputs input::placeholder {
@@ -79,8 +81,14 @@ body {
     transition-duration: 0.34s;
     
 }
-.inputs:invalid {
+
+input:not(:placeholder-shown):not(:focus):invalid  {
     border-color: red;
+    border-radius: 5px;
+}    
+
+ input:valid {
+    border-color: #2A443C;
 }
 
 .button-field {
@@ -119,3 +127,4 @@ body {
     filter: brightness(0.9);
     text-decoration: underline;
 }
+

@@ -23,18 +23,21 @@
             </div>
             <div class="email-number-field inputs">
                 <input type="email" name="userEmail" placeholder="Email" required>
-                <input type="number" name="userNumber" placeholder="Phone Number" required>
+                <input type="text" name="userNumber" placeholder="Phone Number" pattern="/\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/" minlength="10" required>
             </div>
 
             <div class="password-field inputs">
-                <input type="password" placeholder="Password">
-                <input type="password" placeholder="Cofirm Password">
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Cofirm Password" required>
             </div>
             <div class="button-field">
                 <button class="submit-button" type="submit">Create Account</button>
                 <span class="login-link">Already have an account? <a href="#">Log In</a></span>
             </div>
         </form>
+        <div class="icon-odin-name">
+            <img src="" alt="">
+        </div>
     </div>
 </body>
 </html>
