@@ -2,18 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:  "Lexend Deca", sans-serif; 
+    --primary-font: "Lexend Deca", sans-serif; 
+    --odin-font: "Norse Bold";
     --input-height: 18px;
     --input-width: 300px;
     --input-padding: 9px 5px;
     --input-placeholder-size: 12px;
     --input-color: #2A443C;
     --button-color: #3B5D70;
+    
 }
 
 @font-face {
     font-family: "Norse Bold";
-    src: url("C://Windows/Fonts/NorseBold.ttf");
+    src: url("assets/fonts/Norse-Bold.otf");
 }
 
 body {
@@ -21,6 +23,13 @@ body {
     background-color: #ecf1f1;
 }
 
+.image-container span,
+.content-form h1,
+.inputs input::placeholder,
+.submit-button,
+.button-field span {
+    font-family: var(--primary-font);
+}
 .image-container {
     width: 600px;
     height: 950px;
@@ -144,4 +153,19 @@ input:not(:placeholder-shown):not(:focus):invalid  {
 .button-field span > a:hover {
     filter: brightness(0.9);
     text-decoration: underline;
+}
+.footer {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.footer span {
+    font-family: var(--odin-font);
+    font-size: 25px;
+}
+.footer a {
+    text-decoration: none;
+    color: #0D1C22
 }
